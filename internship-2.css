@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    background-color: #f5f5f5;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 10px;
+    width:150px;
+    height: 70px;
+}
+.menu{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+.icons img{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+section{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.image{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width:80%;
+    height: 80%;
+}
+.info{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;   
+}
+.info h3{
+    text-align: left;
+}
+.name h4{
+    color:#519bc0;
+}
+.name h1{
+    font-size: 2rem;
+}
+.rating{
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #339e00;
+}
+.rating h4{
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.rating img{
+    width:150px;
+    height: 30px;
+}
+.price h1{
+    font-size: 1.8rem;
+    color: #f98900;
+    display: inline-block;
+}
+.striked-price{
+    padding: 5px;
+    font-size: .9rem;
+    text-decoration: line-through;
+}
+.buttons{
+    width:450px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width:200px;
+    padding: 15px 20px;
+}
+.buttons button:nth-of-type(1){
+    background-color: #f98900;
+    color: white;
+}
+ @media only screen and (max-width:540px){
+     :root{
+         font-size: 11px;
+     }
+     .image {
+         width:100%;
+         height: 60%;
+     }
+     
+     section{
+         display: flex;
+         flex-direction: column;
+     }
+     nav{
+         width: 100%;
+         height: 8vh;
+     }
+     .logo{
+         width: 120px;
+         height: 50px;
+     }
+     .menu{
+         width: 30px;
+         height: 30px;
+     }
+     .icons img{
+         margin: 0;
+        width: 30px;
+        height: 30px;
+     }
+     .info{
+         padding: 10px;
+         display: flex;
+         align-self: flex-start;
+         width: 100%;
+     }
+     .name h1{
+         width: 100%;
+     }
+     .buttons{
+         width: 100%;
+     }
+     .buttons button{
+         width: 50%;
+     }
+     .rating h4{
+         font-size: 1.8rem;
+     }
+
+ }
